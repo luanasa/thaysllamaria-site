@@ -310,10 +310,13 @@ footer a:hover {
 
 @media (max-width: 600px) {
 
-  header {
+.section {
+    display: none; /* Ou qualquer outra propriedade que deseja remover */
+}
+header {
   display: none;
 }
-  /* Style the navigation menu */
+  /*navigation menu */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -352,17 +355,23 @@ footer a:hover {
   color: rgb(56, 54, 54);
 }
 
+.topnav img {
+  margin-bottom: -2rem;
+}
+
+/* CONTAINER SECTION */
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-top: 1px solid black;
-  gap: 2rem;
+  width: fit-content;
+  height: fit-content;
 }
 
 .left-side {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -375,16 +384,12 @@ footer a:hover {
 }
 
 .left-side p {
-  margin-top: 1rem;
   text-align: center;
-  width: 15rem;
   font-size: 29px;
 }
 
 .left-side span {
-  margin-top: 1rem;
   font-weight: 600;
-  margin-bottom: 1rem;
   font-size: 19px;
 }
 
@@ -393,6 +398,13 @@ footer a:hover {
   display: flex;
   gap: 1rem;
 }
+
+.right-side img {
+  width: 20rem;
+  margin-left: 3rem;
+  margin-top: -2rem;
+}
+/* BIO SECTION */
 
 #bio-section {
   display: flex;
@@ -403,6 +415,7 @@ footer a:hover {
   text-align: center;
   margin-bottom: 1.5rem;
   background-color: #F4F1E8;
+  margin-top: -2rem;
 }
 
 #bio-section h1 {
@@ -421,6 +434,8 @@ footer a:hover {
   font-size: 24px;
   margin-bottom: 2rem;
 }
+
+/* PROJECTS SECTION */
 
 #portfolio-section {
   display: flex;
@@ -447,7 +462,6 @@ footer a:hover {
   justify-content: space-between;
   list-style: none;
   gap: 2rem;
-  margin-bottom: 2.5rem;
 }
 
 .projects-ul li{
@@ -461,47 +475,24 @@ footer a:hover {
   width: 20rem;
 }
 
+/* CONTACT SECTION */
+
 #contact {
   background-color:#9B4819 ;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .contact-left {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  color: #ddd;
-  gap: 1rem;
-  font-size: 20px;
-}
-
-.contact-left span {
-  border: 1px solid #ddd;
-  width: 95%;
+  width: fit-content;
 }
 
 .contact-left ul {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-}
-
-.contact-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #ddd;
-}
-
-.contact-right li {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 }
