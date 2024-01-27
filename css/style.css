@@ -13,14 +13,6 @@ body {
   gap: 0.5rem;
 }
 
-.section {
-  opacity: 0; /* Inicialmente oculta a seção */
-  transition: opacity 1s ease; /* Adiciona uma transição suave */
-}
-.section.visible {
-  opacity: 1; /* Torna a seção visível */
-}
-
 .topnav {
   display: none;
 }
@@ -308,11 +300,8 @@ footer a:hover {
 
 /* MOBILE VERSION */ 
 
-@media (max-width: 600px) {
+@media  (max-width: 600px) {
 
-.section {
-    display: none; /* Ou qualquer outra propriedade que deseja remover */
-}
 header {
   display: none;
 }
@@ -361,7 +350,7 @@ header {
 
 /* CONTAINER SECTION */
 
-.container {
+.mbl-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -371,24 +360,24 @@ header {
   height: fit-content;
 }
 
-.left-side {
+.mbl-leftside {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.left-side h1{
+.mbl-leftside h1{
   font-size: 40px;
   color: #9B4819;
 }
 
-.left-side p {
+.mbl-leftside p {
   text-align: center;
   font-size: 29px;
 }
 
-.left-side span {
+.mbl-leftside span {
   font-weight: 600;
   font-size: 19px;
 }
@@ -399,7 +388,7 @@ header {
   gap: 1rem;
 }
 
-.right-side img {
+.mbl-rightside img {
   width: 20rem;
   margin-left: 3rem;
   margin-top: -2rem;
@@ -408,6 +397,7 @@ header {
 
 #bio-section {
   display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
