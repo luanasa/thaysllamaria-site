@@ -30,8 +30,10 @@
       <i class="fa fa-bars"></i>
     </a>
   </div>
-    <img class="logo" src="./assets/img/stars.png" alt="Imagem de 3 estrelas">
-    <header>
+
+      <!-- DESKTOP -->
+    <header id="nav">
+      <img class="logo" src="./assets/img/stars.png" alt="Imagem de 3 estrelas">
       <ul>
         <li>
           <a href="#bio-section">BIOGRAFIA</a>
@@ -45,7 +47,7 @@
       </ul>
     </header>
   
-    <div class="container">
+    <div class="container" id="hero">
       <div class="left-side">
         <h1>Thayslla Maria</h1>
         <p>Social Media e Empreendedora que mora
@@ -54,22 +56,22 @@
         <span>@thayyuchoa</span>
         <ul class="social-links">
           <li>
-            <a href="https://www.instagram.com/thayyuchoa/">
+            <a target="_blank" href="https://www.instagram.com/thayyuchoa/">
               <img src="./assets/img/instagram.svg" alt="">
             </a>
           </li>
           <li>
-            <a href="mailto:thaysllauchoa@gmail.com">
+            <a target="_blank" href="mailto:thaysllauchoa@gmail.com">
               <img src="./assets/img/email.svg" alt="">
             </a>
           </li>
           <li>
-            <a href="https://www.tiktok.com/@thayyuchoa">
+            <a target="_blank" href="https://www.tiktok.com/@thayyuchoa">
               <img src="./assets/img/tiktok.svg" alt="">
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/thayslla-uchoa-8b281420a/">
+            <a target="_blank" href="https://www.linkedin.com/in/thayslla-uchoa-8b281420a/">
               <img src="./assets/img/linkedin.svg" alt="">
             </a>
           </li>
@@ -77,9 +79,10 @@
       </div>
 
       <div class="right-side">
-        <img src="./assets/img/profilepic.png" alt="">
+        <img src="./assets/img/profile-pic.jpeg" alt="">
       </div>
-      
+
+      <img class="arrow-down" src="./assets/img/arrow-down.svg" alt="">
     </div>
 
     <section id="bio-section">
@@ -87,11 +90,11 @@
       <h1>Olá, <span>eu sou a Thay!</span></h1>
       <p>Tenho 25 anos, sou empreendedora, estudante de administração, faço projetos de design e atualmente sou voluntária de social media. </p>
       
-      <a href="#">Me contrate</a>
+      <a target="_blank" href="https://www.linkedin.com/in/thayslla-uchoa-8b281420a/">Me contrate</a>
     </section>
 
-    <section id="portfolio-section">
-      <img src="./assets/img/stars.png" alt="">
+    <section class="section" id="portfolio-section">
+      <img class="stars" src="./assets/img/stars.png" alt="">
       <h1>Galeria de Projetos</h1>
       <p>Aqui estão alguns dos projetos em que trabalhei</p>
 
@@ -111,24 +114,24 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section class="section" id="contact">
       <div class="contact-left">
         <h1>Entre em contato para criarmos arte visual impactante juntos.</h1>
       <span></span>
       <p>Para ver mais do meu trabalho, visite minhas redes sociais:</p>
       <ul>
         <li>
-          <a href="https://www.instagram.com/thayyuchoa/">
+          <a target="_blank" href="https://www.instagram.com/thayyuchoa/">
             <img src="./assets/img/instagram.svg" alt="">
           </a>
         </li>
         <li>
-          <a href="https://www.tiktok.com/@thayyuchoa">
+          <a target="_blank" href="https://www.tiktok.com/@thayyuchoa">
             <img src="./assets/img/tiktok.svg" alt="">
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/thayslla-uchoa-8b281420a/">
+          <a target="_blank" href="https://www.linkedin.com/in/thayslla-uchoa-8b281420a/">
             <img src="./assets/img/linkedin.svg" alt="">
           </a>
         </li>
@@ -149,7 +152,14 @@
           </li>
         </ul>
       </div>
+      <a href="#nav">
+        <img src="./assets/img/arrow-up.svg" alt="">
+      </a>
     </section>
+
+    <footer>
+      <p>Site by <a target="_blank" href="https://luanasa.github.io/portfolio-lua/index.html">Lua Martins</a>🤍</p>
+    </footer>
 
     <script src="./js/index.js"></script>
 </body>
